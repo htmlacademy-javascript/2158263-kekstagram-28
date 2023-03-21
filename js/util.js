@@ -6,7 +6,6 @@ function getRandomInteger (min, max) {
   return Math.floor(result);
 }
 
-// Генерация случайного не повторяющегося числа в диатазоне (min, max)
 function createRandomIdFromRangeGenerator (min, max) {
   const previousValues = [];
 
@@ -23,7 +22,6 @@ function createRandomIdFromRangeGenerator (min, max) {
   };
 }
 
-// Выбор случайного элемента из массива.
 function getRandomArrayElement (elements) {
   return elements[getRandomInteger(0, elements.length - 1)];
 }
