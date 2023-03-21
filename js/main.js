@@ -1,2 +1,3 @@
-import {generatedPictureByNumber} from './thumbnailrendering/js';
-generatedPictureByNumber();
+import {getPictures} from '.data.js';
+import {generateThumbnails} from '.thumbnailrendering.js';
+generateThumbnails(getPictures());
