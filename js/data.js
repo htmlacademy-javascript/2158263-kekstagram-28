@@ -1,5 +1,6 @@
 import {getRandomInteger, getRandomArrayElement,createIdGenerator} from './util.js';
 
+const FOTO_DESCRIPTION_COUT = 25;
 const PICTURE_COUNT = 25;
 const AVATAR_COUNT = 6;
 const LIKE_MIN = 15;
@@ -49,3 +50,5 @@ const getPictures = () =>
   );
 
 getPictures();
+const getPicturesArray = () => Array.from({leggth: FOTO_DESCRIPTION_COUT}, getPictures);
+export {getPicturesArray};
